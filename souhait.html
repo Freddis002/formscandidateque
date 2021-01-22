@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="col-12 text-left mb-3">
+            <h6 class="mb-3">1/Quel Poste</h6>
+            <label for="exampleFormControlSelect1">Type de contrat:</label>
+            <div class="form-check form-check-inline">
+               
+                <input class="form-check-input" type="checkbox" id="cdi" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">CDI</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="cdd" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">CDD</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="interim" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Intérim</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="contratpro" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Contrat de professionalisation</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="contratapp" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Contrat de d'apprentissage</label>
+              </div>
+              
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="stage" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Stage</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="freelance" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Freelance</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="cdiinterimaire" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">CDI Intérimaire</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="cae" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">CUI-CAE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="cie" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">CUI-CIE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="servicecivique" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Service civique</label>
+              </div>
+        
+              <br>
+        
+              <label for="exampleFormControlSelect1">Temps de travail :</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="temps_plein" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Temps plein</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="partiel" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Temps partiel</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="indifferent" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Indifférent</label>
+              </div>
+        
+              <br>
+             
+               <div class="form-group">
+                <label for="fonction_salaire">Fonctions :</label>
+                <input type="text" class="form-control" id="fonctions" placeholder="Exemple: Developpeur web" required>
+              </div>
+
+              <div class="form-group">
+                <label for="salairebrut">Salaires :</label>
+                <input type="text" class="form-control" id="salaire" placeholder="Brut annuel(k€)" required>
+              </div>
+              </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-12 text-left mb-3">
+                <h6 class="mb-3">2/Quelle Entreprise</h6>
+
+                <div class="form-group">
+                    <label for="secteur_activite">Secteur d'activité</label>
+                    <input type="text" class="form-control" id="secteur" placeholder="Exemple: Informatique" required>
+                </div>
+                <label for="exampleFormControlSelect1">Taille de l'entreprise :</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="tpe" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">TPE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="pme" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">PME</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="eti" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">ETI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="grandgroup" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Grand groupe</label>
+                </div>
+                <div class="form-group">
+                    <label for="secteur_activite">Lieux</label>
+                    <input type="text" class="form-control" id="Lieux" placeholder="Saisissez un pays, une région ou un département" required>
+                </div>
+        </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Suivant</button>
+          </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
