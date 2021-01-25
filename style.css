@@ -64,7 +64,7 @@ body {
 .rating {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: baseline;
 }
 
 	/* Le groupe '.stars' positionne les étoiles
