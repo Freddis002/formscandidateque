@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 
 <body>
-    
-    
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        
+      </div>
 
-    <h1>Poste</h1>
+
+
+      <div class="col-6">
+        <h1 class="text-center mb-4 section-title">Poste</h1>
     <form>
+      <div class="row">
+      
+        <div class="col-12 mon-profil-wrapper mb-4">
+        
+
       <div class="form-group">
         <label for="formGroupExampleInput">Métier souhaité</label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Exemple: Developpeur web" required>
@@ -44,7 +56,7 @@
 
         <div class="form-floating">
           <label for="floatingTextarea">Points clés</label>
-          <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+          <textarea class="form-control" placeholder="" id="floatingTextarea" required></textarea>
         </div>
       <br>
 
@@ -70,7 +82,22 @@
           <option>Europe</option>
           <option>Reste du monde</option>
         </select>
+       
       </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Suivant</button>
+      </div>
+      </div>
+
+      <div class="col-3">
+        
+      </div>
+
+    </div>
+  </div>
+    
+
+    
 
 
 
@@ -83,9 +110,7 @@
       
 
 
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Suivant</button>
-      </div>
+    
      
     
        

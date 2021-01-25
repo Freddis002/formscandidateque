@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 
 <body>
-    
-    
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+      </div>
 
-    <h1>Expérience professionnelle</h1>
+     
+      
+    
+    <!--DEBUT EXPERIENCE PRO-->
+  <div class="col-6">
+    <h1 class="text-center mb-4 section-title">Moments clés</h1>
     <form>
+      <div class="row">
+        <div class="col-12 mon-profil-wrapper mb-4">
+
     <div class="form-group">
+      <h6 class="text-left mb-4 section-title">Expérience professionnelle</h6>
         <label for="formGroupExampleInput">Poste*</label>
         <input type="text" class="form-control" id="poste" placeholder="Exemple: Developpeur web" required>
        
@@ -33,40 +45,135 @@
 
       <input type="date" id="date" name="debut"
              value="22-01-2021"
-             min="01-01-2000" max="31-12-2021">
+             min="01-01-2000" max="31-12-2021" required>
       <br>
 
       <label for="start">Fin :</label>
 
-      <input type="date" id="date" name="datedebut"
+      <input type="date" id="date" name="datefin"
              value="22-01-2021"
-             min="01-01-2000" max="31-12-2021">
+             min="01-01-2000" max="31-12-2021" required>
 
       <br>
 
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Disponibilité</label>
-        <select class="form-control" id="exampleFormControlSelect1" required>
-          <option selected>Précisez vos Disponibilité</option>
-          <option>Immédiatement</option>
-          <option>Moins de 3 mois</option>
-          <option>Entre 3 et 6 mois</option>
-          <option>Plus de 6 mois</option>
-        </select>
-      </div>
-      <br>
+        <label for="formGroupExampleInput">Entreprise*</label>
+        <input type="text" class="form-control" id="entreprise" required>
+       
+    </div>
 
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Mobilité</label>
-        <select class="form-control" id="exampleFormControlSelect1" required>
-          <option selected>Précisez vos disponibilités</option>
-          <option>Département</option>
-          <option>Région</option>
-          <option>France Entière</option>
-          <option>Europe</option>
-          <option>Reste du monde</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Secteur d'activité</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+        <option selected>Activité</option>
+        <option>Exemples</option>
+      </select>
+      
+    </div>
+
+    <label for="exampleFormControlSelect1">Taille de l'entreprise :</label>
+    <br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tpe" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">TPE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pme" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">PME</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="eti" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">ETI</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="grandgroupe" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Grand groupe</label>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Lieu*</label>
+                <select required class="form-control" id="exampleFormControlSelect1" >
+                  <option selected>Sélectionnez le lieu de votre entreprise</option>
+                  <option>Exemples</option>
+                </select>
+                <br>
+
+      <!--FIN EXPERIENCE PRO-->
+
+      <!--DEBUT FORMATION-->
+
+      <h6 class="text-left mb-4 section-title">Formation</h6>
+                <form>
+                  <div class="form-group">
+                      <label for="formGroupExampleInput">Formation*</label>
+                      <input type="text" class="form-control" id="poste" placeholder="Exemple: Developpeur web" required>
+                     
+                  </div>
+                    
+              
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Niveau</label>
+                    <select class="form-control" id="exampleFormControlSelect1" required>
+                      <option selected>Sélectionnez le niveau de formation</option>
+                      <option>Secondaire</option>
+                      <option>Bac</option>
+                      <option>Bac+1</option>
+                      <option>Bac+2</option>
+                      <option>Bac+3</option>
+                      <option>Bac+4</option>
+                      <option>Bac+5</option>
+                      <option>>Bac+5</option>
+                    </select>
+                    
+                  </div>
+                    <br>
+              
+                    <label for="start"> Début :</label>
+              
+                    <input type="date" id="date" name="debut"
+                           value="22-01-2021"
+                           min="01-01-2000" max="31-12-2021">
+                    <br>
+              
+                    <label for="start">Fin :</label>
+              
+                    <input type="date" id="date" name="datedebut"
+                           value="22-01-2021"
+                           min="01-01-2000" max="31-12-2021">
+              
+                    <br>
+              
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Organisme*</label>
+                      <input type="text" class="form-control" id="organisme" required>
+                     
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Nature de l'organisme*</label>
+                    <select class="form-control" id="exampleFormControlSelect1" required>
+                      <option selected>Organisme</option>
+                      <option>Ecole de commerce ou de gestion</option>
+                      <option>Ecole ingénieurs</option>
+                      <option>Ingénieur des universités</option>
+                      <option>Autre école de spécialité</option>
+                      <option>Diplome universitaire</option>
+                      <option>Autre</option>
+
+                    </select>
+                    
+                  </div>
+
+
+              
+              
+              
+
+
+
+
+ 
+        
 
 
 
