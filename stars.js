@@ -1,22 +1,29 @@
-$NbStar=4;
 
-
-function NotationSystem() {
-    for(i=1;i<Nbstar+1;i++) {
-        var img =document.getElementById('Star'+i);
-        img.onclick=function(){alert('Vous avez donné la note de'+Name2Nb(this.id)+'.');}
-
-        img.alt='Donner la note de '+i;
-
-        img.src = StartOutUrl;
-        img.onmouseover=function() {StarOver(this.id);};
-        img.onmouseover=function() {StarOut(this.id);};
-    }
-}
-
-function StarOver(Star) {
-    StarNb=Name2Nb(Star);
-    for(i=1;i<(StarNb*1)+1;i++) {
-        document.getElementById('Star'+i).src=StarOverUrl;
-    }
-}
+function selectEtoileA(aEtoiles, bUnselect, iNote, sClassSlelected){
+    for(var h = 0; h < aEtoiles.length; h++) {
+      let oClass = aEtoiles[h].classList;
+      if(bUnselect==false && h <= iNote - 1 ){//
+        oClass.add(sClassSlelected);
+      }else{
+        oClass.remove(sClassSlelected);
+      }
+    }//for
+  }//fct
+  
+  function selectEtoileTemp(oEvent){
+    var oEl = oEvent.currentTarget,
+        oFormExempleA =  oEl.parentNode,
+        aEtoilesExempleA = oFormExempleA.getElementsByClassName('etoile'),
+        sClassSlelected = 'gold';
+    selectEtoileA(aEtoilesExempleA, false, (oEvent.type == 'mouseleave')? oFormExempleA.note.value:oEl.iNote, sClassSlelected);
+  }//fct
+  
+  function selectEtoileB(oEvent){
+    var oEl = oEvent.currentTarget,
+        sClass = "selected"; 
+    if(oEvent.type == 'mouseleave'|| oEvent.type == 'touchend'){
+      oEl.classList.remove(sClass);
+    }else{
+      oEl.classList.add(sClass);
+    } 
+  }//fct
