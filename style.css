@@ -48,6 +48,19 @@ body {
     background: darkorange;
 }
 
+
+
+/* ************** DATE EXPERIENCES ********** */
+
+
+
+	
+
+/* **************** FIN EXPERIENCES ********** */
+
+
+/* *************  ETOILES COMPETENCES ********** */
+
 /* Par défaut, une étoile est en gris,
    avec un padding et un curseur en forme de main. */
    .fa-star {
@@ -91,4 +104,4 @@ body {
 		color: gray;
 	}
 
-/******************************************************************/
+/******************************* FIN ETOILES COMPETENCES ******************************/
