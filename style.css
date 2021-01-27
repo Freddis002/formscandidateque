@@ -56,26 +56,49 @@ body {
 
 	
 
-/* **************** FIN EXPERIENCES ********** */
+/* **************** FIN DATE EXPERIENCES ********** */
 
 
 /* *************  ETOILES COMPETENCES ********** */
 
 
 
-  form span{
-	font-size: 3em;
-	cursor: pointer;
-	color: grey;
-  }
-  
-  form span.gold {
-	color: gold;
-  }
-
+/*#exemple2 {
+  display: inline-block;
+}
+#exemple2:after{
+  content:"";
+  display:  block;
+  clear:both;
+}
+#exemple2 label {
  
-  form span:hover{ 
-	color: black!important;
-  }
+  float: right;
+  font-size:0;
+  
+}
+#exemple2 label:after{ 
+  content:"★";
+  display:  block;
+  font-size: 1.8rem;
+}
+#exemple2 [name="note"]{ 
+  display:none;
+}
+#exemple2:hover label{
+  color: grey!important;
+}
+#exemple2 label:hover ~ label{
+  color: gold!important;
+}
+#exemple2 label:hover{ 
+  color: black!important;
+}
+#exemple2 input:checked ~ label{
+  color: gold;
+}
+*/
+
+
 
 /******************************* FIN ETOILES COMPETENCES ******************************/
