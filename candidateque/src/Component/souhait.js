@@ -119,6 +119,7 @@ function Souhait(props) {
     			<Form.Control type="text" placeholder="Saisissez un pays,une région ou un département" onChange={evt=>setLieux(evt)}/>
   				</Form.Group><br/>
 
+				  <Button  type='submit' onClick={()=>props.onChangePage(1)} variant="primary">Retour</Button>
 				<Button  type='submit' onClick={()=>props.onChangePage(3)} variant="primary">Suivant</Button>
 
 

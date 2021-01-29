@@ -12,7 +12,7 @@ function Profil1(props) {
 
   console.log(props.numeroPage);
 
-  if (props.numeroPage === 1) {
+  
     return (
       <div>
         <Container>
@@ -102,12 +102,8 @@ function Profil1(props) {
           </Row>
         </Container>
       </div>
-    );
-  } else if (props.numeroPage === 2) {
-    return <Souhait />;
-  } else {
-    return <Cv />;
-  }
+    )
+  
 }
 
 export default Profil1;
