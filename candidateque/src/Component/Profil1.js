@@ -8,7 +8,8 @@ function Profil1(props) {
 
   const [metier,setMetier]=useState([]);
   const [experience, setExperience]=useState([]);
-  const [poinCles,setPointCle]=useState([]);
+  const [poinCles,setPointCles]=useState([]);
+  const [mobilité,setMobilite]=useState([]);
   
 
   
@@ -27,12 +28,12 @@ if (props.numeroPage === 1){
 <Form>
   <Form.Group controlId="exampleForm.ControlInput1">
     <Form.Label>Métier souhaité</Form.Label>
-    <Form.Control type="text" placeholder="Exemple : Développeur web"/>
+    <Form.Control type="text" placeholder="Exemple : Développeur web" onChange={evt=>setMetier(evt)}/>
   </Form.Group>
 
   <Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Label>Expérience dans le métier</Form.Label>
-    <Form.Control as="select" onChange={evt=>setMetier(evt)}>
+    <Form.Control as="select" onChange={evt=>setExperience(evt)}>
       <option selected>Précisez la durée</option>
       <option>Débutant</option>
       <option>1 an d'expérience</option>
@@ -50,7 +51,7 @@ if (props.numeroPage === 1){
 
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Points clés</Form.Label>
-    <Form.Control as="textarea" rows={3} />
+    <Form.Control as="textarea" rows={3} onChange={evt=>setPointCles(evt)} />
   </Form.Group>
 
   <Form.Group controlId="exampleForm.ControlSelect1">
@@ -67,7 +68,7 @@ if (props.numeroPage === 1){
 
   <Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Label>Mobilité</Form.Label>
-    <Form.Control as="select">
+    <Form.Control as="select" onChange={evt=>setMobilite(evt)}>
       <option selected>Précisez vos Mobilités</option>
       <option>Département</option>
       <option>Région</option>
