@@ -57,6 +57,7 @@ function Experience(props) {
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Poste</Form.Label>
                 <Form.Control
+                required
                   type="text"
                   placeholder="Exemple: Developpeur web"
                 />
@@ -64,13 +65,16 @@ function Experience(props) {
               <Form.Group controlId="exampleForm.ControlSelect1">
                 <Form.Label>Fonction</Form.Label>
                 <Form.Control
+                  required
                   type="text"
                   placeholder="Exemple: Developpeur web"
+                  
                 />
               </Form.Group>
               <Form.Label>Debut : </Form.Label>
               <br />
               <DatePicker
+              required
                 locale="fr-FR"
                 dateFormat="dd/MM/yyyy"
                 selected={date}
@@ -81,6 +85,7 @@ function Experience(props) {
               <Form.Label>Fin : </Form.Label>
               <br />
               <DatePicker
+              required
                 locale="fr-FR"
                 dateFormat="dd/MM/yyyy"
                 selected={datefin}
@@ -95,7 +100,7 @@ function Experience(props) {
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlSelect1">
                 <Form.Label>Secteur d'activité</Form.Label>
-                <Form.Control as="select" onChange={(evt) => setActivite(evt)}>
+                <Form.Control as="select" required onChange={(evt) => setActivite(evt)}>
                   <option selected>Activité</option>
                   <option>Exemple</option>
                 </Form.Control>
@@ -107,7 +112,7 @@ function Experience(props) {
               <br />
               <Form.Check inline label="ETI" type="radio" id="type3" />
               <br />
-              <Form.Check inline label="Grand groupe" type="radio" id="type4" />
+              <Form.Check inline label="Grand groupe" type="radio" id="type4"  />
               <br />
               <Form.Group controlId="exampleForm.ControlSelect1">
                 <Form.Label>Lieux</Form.Label>
