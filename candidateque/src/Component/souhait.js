@@ -1,28 +1,28 @@
 import React, { useState } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 
-
 function Souhait(props) {
+  const [poste, setPoste] = useState([]);
+  const [fonction, setFonction] = useState([]);
+  const [salaire, setSalaire] = useState([]);
+  const [activite, setActivite] = useState([]);
+  const [lieux, setLieux] = useState([]);
 
-	const[poste,setPoste]=useState([]);
-	const[fonction,setFonction]=useState([]);
-	const[salaire,setSalaire]=useState([]);
-	const[activite,setActivite]=useState([]);
-	const[lieux,setLieux]=useState([]);
-
-
-	
-	
   return (
     <div>
       <Container>
         <Row>
           <Col>
-		  <h1 className='text-center mb-4 section-title'>Mon profil - Souhaits</h1>
+            <h1 className="text-center mb-4 section-title">
+              Mon profil - Souhaits
+            </h1>
             <Form className="mon-profil-wrapper mb-4">
-              
               <h6> 1 / Quel Poste </h6>
-              <div key={(`inline-checkbox`)} className="mb-3" onChange={evt=>setPoste(evt)}>
+              <div
+                key={`inline-checkbox`}
+                className="mb-3"
+                onChange={(evt) => setPoste(evt)}
+              >
                 <Form.Label> Type de contrat : </Form.Label> <br />
                 <Form.Check inline label="CDI" type="checkbox" id="type1" />
                 <br />
@@ -87,51 +87,74 @@ function Souhait(props) {
                   id="type3"
                 />
                 <br />
-
-				<Form.Group controlId="exampleForm.ControlInput1"><br />
-    			<Form.Label>Fonction :</Form.Label>
-    			<Form.Control type="text" placeholder="Exemple : Développeur web" onChange={evt=>setFonction(evt)}/>
-  				</Form.Group>
-
-				<Form.Group controlId="exampleForm.ControlInput1"><br />
-    			<Form.Label>Salaires :</Form.Label>
-    			<Form.Control type="text" placeholder="Brut annuel(k€)" onChange={evt=>setSalaire(evt)}/>
-  				</Form.Group><br/>
-
-				  <h6> 1 /Quelle entreprise </h6>
-				<Form.Group controlId="exampleForm.ControlInput1"><br />
-    			<Form.Label>Secteur d'activité :</Form.Label>
-    			<Form.Control type="text" placeholder="Exemple: Informatique" onChange={evt=>setActivite(evt)}/>
-  				</Form.Group><br/>
-
-				<Form.Label> Taille de l'entreprise : </Form.Label> <br />
+                <Form.Group controlId="exampleForm.ControlInput1">
+                  <br />
+                  <Form.Label>Fonction :</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Exemple : Développeur web"
+                    onChange={(evt) => setFonction(evt)}
+                  />
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                  <br />
+                  <Form.Label>Salaires :</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Brut annuel(k€)"
+                    onChange={(evt) => setSalaire(evt)}
+                  />
+                </Form.Group>
+                <br />
+                <h6> 1 /Quelle entreprise </h6>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                  <br />
+                  <Form.Label>Secteur d'activité :</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Exemple: Informatique"
+                    onChange={(evt) => setActivite(evt)}
+                  />
+                </Form.Group>
+                <br />
+                <Form.Label> Taille de l'entreprise : </Form.Label> <br />
                 <Form.Check inline label="TPE" type="checkbox" id="type1" />
                 <br />
-				<Form.Check inline label="PME" type="checkbox" id="type2" />
-				<br/>
-				<Form.Check inline label="ETI" type="checkbox" id="type3" />
-				<br/>
-				<Form.Check inline label="Grand groupe" type="checkbox" id="type4" />
-				<br/>
-
-				<Form.Group controlId="exampleForm.ControlInput1"><br />
-    			<Form.Label>Lieux :</Form.Label>
-    			<Form.Control type="text" placeholder="Saisissez un pays,une région ou un département" onChange={evt=>setLieux(evt)}/>
-  				</Form.Group><br/>
-
-				  <Button  type='submit' onClick={()=>props.onChangePage(1)} variant="primary">Retour</Button>
-				<Button  type='submit' onClick={()=>props.onChangePage(3)} variant="primary">Suivant</Button>
-
-
-
-
-
-
-
-
-				
-
-
+                <Form.Check inline label="PME" type="checkbox" id="type2" />
+                <br />
+                <Form.Check inline label="ETI" type="checkbox" id="type3" />
+                <br />
+                <Form.Check
+                  inline
+                  label="Grand groupe"
+                  type="checkbox"
+                  id="type4"
+                />
+                <br />
+                <Form.Group controlId="exampleForm.ControlInput1">
+                  <br />
+                  <Form.Label>Lieux :</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Saisissez un pays,une région ou un département"
+                    onChange={(evt) => setLieux(evt)}
+                  />
+                </Form.Group>
+                <br />
+                <Button
+                  type="submit"
+                  onClick={() => props.onChangePage(1)}
+                  variant="primary"
+                >
+                  Retour
+                </Button>
+                <Button
+                  type="submit"
+                  onClick={() => props.onChangePage(3)}
+                  variant="primary"
+                >
+                  Suivant
+                </Button>
               </div>
             </Form>
           </Col>
@@ -139,10 +162,6 @@ function Souhait(props) {
       </Container>
     </div>
   );
-
-  
-
-
 }
 
 export default Souhait;

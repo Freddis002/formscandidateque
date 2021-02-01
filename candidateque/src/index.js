@@ -9,7 +9,7 @@ import Cv from "./Component/cv";
 import Experience from "./Component/experience";
 
 function App(props) {
-  const [page, setPage] = useState(4);
+  const [page, setPage] = useState(1);
 
   const handleChangePage = (value) => {
     setPage(value);
