@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { registerLocale, setDefaultLocale } from "react-datepicker";
+import { registerLocale} from "react-datepicker";
 import fr from "date-fns/locale/fr";
 registerLocale("fr", fr);
 
@@ -75,7 +75,7 @@ function Experience(props) {
               <br />
               <DatePicker
               required
-                locale="fr-FR"
+                locale="fr"
                 dateFormat="dd/MM/yyyy"
                 selected={date}
                 onSelect={handleDateSelect} //when day is clicked
@@ -86,7 +86,7 @@ function Experience(props) {
               <br />
               <DatePicker
               required
-                locale="fr-FR"
+                locale="fr"
                 dateFormat="dd/MM/yyyy"
                 selected={datefin}
                 onSelect={handleDateSelect1} //when day is clicked
@@ -145,7 +145,7 @@ function Experience(props) {
               <Form.Label>Début </Form.Label>
               <br />
               <DatePicker
-                locale="fr-FR"
+                locale="fr"
                 dateFormat="dd/MM/yyyy"
                 selected={datedebut}
                 onSelect={handleDateSelect2} //when day is clicked
@@ -155,7 +155,7 @@ function Experience(props) {
               <Form.Label>Fin : </Form.Label>
               <br />
               <DatePicker
-                locale="fr-FR"
+                locale="fr"
                 dateFormat="dd/MM/yyyy"
                 selected={datefinn}
                 onSelect={handleDateSelect3} //when day is clicked

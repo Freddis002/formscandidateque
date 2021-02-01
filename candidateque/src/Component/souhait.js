@@ -32,7 +32,7 @@ function Souhait(props) {
                 <br />
                 <Form.Check
                   inline
-                  label="Contrat de professionalisation"
+                  label="Contrat pro"
                   type="checkbox"
                   id="type4"
                 />
