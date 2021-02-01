@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import Souhait from "./souhait";
 import Cv from "./cv";
@@ -10,11 +10,13 @@ function Profil1(props) {
   const [Disponibilite, setDisponibilite] = useState([]);
   const [mobilité, setMobilite] = useState([]);
 
-  console.log(props.numeroPage);
-
+ 
+  
+  
   return (
     <div>
       <Container>
+
         <Row>
           <Col>
             <h1 className="text-center mb-4 section-title">

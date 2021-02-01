@@ -163,9 +163,9 @@ function Experience(props) {
                 <Form.Control type="text" />
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Disponibilité</Form.Label>
+                <Form.Label>Ecole</Form.Label>
                 <Form.Control as="select" onChange={(evt) => setNature(evt)}>
-                  <option selected>Organisme</option>
+                  <option selected>Ecole</option>
                   <option>Ecole de commerce ou de gestion</option>
                   <option>Ecole ingénieurs</option>
                   <option>Ingénieur des universités</option>
@@ -183,7 +183,7 @@ function Experience(props) {
               </Button>
               <Button
                 type="submit"
-                onClick={() => props.onChangePage(4)}
+                onClick={() => props.onChangePage(5)}
                 variant="primary"
               >
                 Suivant
