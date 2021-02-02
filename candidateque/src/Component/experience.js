@@ -85,7 +85,7 @@ function Experience(props) {
               <Form.Label>Fin : </Form.Label>
               <br />
               <DatePicker
-              required
+              
                 locale="fr"
                 dateFormat="dd/MM/yyyy"
                 selected={datefin}

@@ -48,7 +48,7 @@ function Competence(props) {
                 onClick={() => props.onChangePage(5)}
                 variant="primary"
               >
-                Suivant
+                Valider
               </Button>
             </Form>
           </Col>
