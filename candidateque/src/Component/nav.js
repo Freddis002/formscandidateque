@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Steps ,Panel,ButtonGroup,Button} from 'rsuite';
+import React, {  } from "react";
+import { Steps} from 'rsuite';
 
 function Menu(props) {
 
-    console.log(props.changePage)
+    
   
    
   

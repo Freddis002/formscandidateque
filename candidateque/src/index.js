@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import ReactDOM from "react-dom";
 import "rsuite/dist/styles/rsuite-default.css";
 import "./index.css";
@@ -25,7 +25,7 @@ function App(props) {
 
 
 
-console.log(step)
+
   if (page === 1) {
     return (
       <Container>

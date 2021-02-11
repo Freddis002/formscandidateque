@@ -1,7 +1,5 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
-import Souhait from "./souhait";
-import Cv from "./cv";
 
 function Profil1(props) {
   const [metier, setMetier] = useState([]);
@@ -68,7 +66,7 @@ function Profil1(props) {
                   as="select"
                   onChange={(evt) => setDisponibilite(evt)}
                 >
-                  <option selected>Précisez vos Disponibilité</option>
+                  <option selected>Précisez vos Disponibilités</option>
                   <option>Immédiatement</option>
                   <option>Moins de 3 mois</option>
                   <option>Entre 3 et 6 mois</option>
